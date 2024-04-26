@@ -1,0 +1,32 @@
+{
+  "name": "template-repository",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "lint": "eslint ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.0.0",
+    "css-loader": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "3.2.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "keywords": [],
+  "description": ""
+}
