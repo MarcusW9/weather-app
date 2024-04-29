@@ -71,7 +71,8 @@ const getWeather = async (lat, lon) => {
 
 const getGeo = async (city) => {
   console.log(city)
-  const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=87a88cdcacc6e330c9a627b2480cb637`)
+  const url = (`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=87a88cdcacc6e330c9a627b2480cb637`)
+  const res = await fetch(url, {mode:'cors'})
   const data = await res.json()
   getWeather(data[0].lat, data[0].lon)
   getForecast(data[0].lat, data[0].lon)
